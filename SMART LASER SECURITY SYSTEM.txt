@@ -1,0 +1,51 @@
+// Laserthief detector with lcd and buzzer 
+
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27,16,2);  
+int sensorPin = A0; 
+int buzzer = 11;
+
+int read_value; 
+
+void setup(){ 
+
+    lcd.init();                      
+  lcd.backlight();
+    pinMode(sensorPin, INPUT); 
+
+pinMode(buzzer,OUTPUT); 
+
+
+lcd.begin(16, 2);
+lcd.clear();
+lcd.setCursor(0,0);
+lcd.print(" LASER ");
+lcd.setCursor(0,1);
+lcd.print(" THIEF DETECTOR ");
+delay(2000);
+lcd.clear();
+}
+
+void loop(){
+rea
+if(read_value==0){ 
+lcd.setCursor(0, 0);
+lcd.print(" NO THIEF ");   
+lcd.setCursor(0, 1);
+lcd.print(".....NORMAL.....");   
+digitalWrite(buzzer, LOW); 
+
+
+}
+else{ 
+lcd.setCursor(0, 0);
+lcd.print("THIEF IS DETECTED");  
+lcd.setCursor(0, 1);
+lcd.print("ALERT....!!! ");
+    
+digitalWrite(buzzer, HIGH); 
+delay(1000);
+}
+delay(100);
+}d_value = digitalRead(sensorPin); 
