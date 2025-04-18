@@ -23,7 +23,7 @@ Laser based Security System is a type of security and alarm system that uses las
 * I2c module
 * Switch
 * 
-#Step-by-Step Instructions
+### Step-by-Step Instructions
 
 1. Clone or Download the Repo
 
