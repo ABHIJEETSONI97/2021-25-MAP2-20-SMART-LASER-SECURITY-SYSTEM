@@ -22,3 +22,44 @@ Laser based Security System is a type of security and alarm system that uses las
 * Lcd display
 * I2c module
 * Switch
+#Step-by-Step Instructions
+
+1. Clone or Download the Repo
+
+Open the GitHub repo: https://github.com/bbx10/Blink
+
+Click "Code" > "Download ZIP", then extract it
+OR
+Use Git:
+
+git clone https://github.com/bbx10/Blink.git
+
+
+2. Open the Code in Arduino IDE
+
+Open Arduino IDE
+
+Go to File > Open
+
+Navigate to the Blink folder and open the file Blink.ino
+
+
+3. Connect Your Arduino
+
+Plug in your Arduino via USB
+
+Go to Tools > Board and select your board (e.g., Arduino Uno)
+
+Go to Tools > Port and select the correct COM port
+
+
+4. Upload the Code
+
+Click the Upload button (the right arrow icon)
+
+Wait for the "Done uploading" message
+
+
+5. Watch the LED Blink
+
+The onboard LED (usually pin 13) should blink every second
